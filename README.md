@@ -1,2 +1,0 @@
-# elektro-rugova
-website
