@@ -1,15 +1,16 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import "./globals.css";
 
 export const metadata = {
-  title: "Moderne Website",
-  description: "Eine moderne Next.js Webseite",
+  title: "Elektro Rugova - Professionelle Elektroinstallationen",
+  description: "Ihr Partner für moderne Elektroinstallationen, Smart Home Lösungen und elektrotechnische Dienstleistungen",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="de">
-      <body className="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+      <body className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 text-gray-900 min-h-screen flex flex-col antialiased">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
