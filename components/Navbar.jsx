@@ -31,7 +31,7 @@ export default function Navbar() {
             <div className="w-10 h-10 electric-gradient rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">⚡</span>
             </div>
-            <span className="font-bold text-2xl gradient-text">Elektro Rugova</span>
+            <span className="font-bold text-2xl gradient-text">XXX</span>
           </Link>
 
           {/* Desktop Menu */}

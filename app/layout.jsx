@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata = {
-  title: "Elektro Rugova - Professionelle Elektroinstallationen",
-  description: "Ihr Partner für moderne Elektroinstallationen, Smart Home Lösungen und elektrotechnische Dienstleistungen",
+  title: "XXX - Professionelle Elektroinstallationen",
+  description: "Elektroinstallationsbetrieb in XXX. Professionelle Elektroinstallationen, Smart Home Lösungen und elektrotechnische Dienstleistungen.",
 };
 
 export default function RootLayout({ children }) {

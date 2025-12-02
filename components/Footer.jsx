@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="w-10 h-10 electric-gradient rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">⚡</span>
               </div>
-              <span className="font-bold text-xl">Elektro Rugova</span>
+              <span className="font-bold text-xl">XXX</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Ihr zuverlässiger Partner für alle elektrotechnischen Anforderungen.
@@ -57,15 +57,15 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">Kontakt</h3>
             <ul className="space-y-2 text-gray-300">
               <li>📞 +49 (0) XXX XXX-XXXX</li>
-              <li>✉️ info@elektro-rugova.de</li>
-              <li>📍 Musterstraße 123</li>
-              <li>📍 12345 Musterstadt</li>
+              <li>✉️ info@xxx.de</li>
+              <li>📍 XXX Straße XX</li>
+              <li>📍 XXXXX XXX</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-          <p>© 2025 Elektro Rugova – Alle Rechte vorbehalten.</p>
+          <p>© 2025 XXX – Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

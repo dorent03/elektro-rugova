@@ -17,7 +17,7 @@ export default function About() {
             <span className="text-gray-800">uns</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Seit über 20 Jahren sind wir Ihr zuverlässiger Partner für alle elektrotechnischen Herausforderungen.
+            Ihr zuverlässiger Elektroinstallationsbetrieb in XXX. Professionelle Lösungen für alle elektrotechnischen Herausforderungen.
           </p>
         </motion.div>
 
@@ -53,16 +53,24 @@ export default function About() {
             className="space-y-6"
           >
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              Unsere Geschichte
+              Über XXX
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Elektro Rugova wurde mit der Vision gegründet, elektrotechnische Dienstleistungen auf höchstem Niveau anzubieten. 
-              Unser erfahrenes Team kombiniert traditionelles Handwerk mit modernster Technologie.
+              XXX ist ein etablierter Elektroinstallationsbetrieb in XXX, geleitet von Herrn XXX. 
+              Wir bieten elektrotechnische Dienstleistungen auf höchstem Niveau und kombinieren traditionelles Handwerk mit modernster Technologie.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Wir sind stolz auf unsere langjährige Erfahrung und die vielen zufriedenen Kunden, die auf unsere Expertise vertrauen. 
-              Qualität, Zuverlässigkeit und Kundenzufriedenheit stehen bei uns an erster Stelle.
+              Unser Unternehmen in der XXX Straße XX in XXX steht für Qualität, Zuverlässigkeit und Kundenzufriedenheit. 
+              Wir sind stolz auf unsere vielen zufriedenen Kunden in XXX und der gesamten Region.
             </p>
+            <div className="mt-6 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl">
+              <p className="text-gray-700 font-semibold">
+                <span className="text-indigo-600">Inhaber:</span> XXX
+              </p>
+              <p className="text-gray-700 mt-2">
+                <span className="text-indigo-600">Standort:</span> XXX Straße XX, XXXXX XXX
+              </p>
+            </div>
           </motion.div>
         </div>
 

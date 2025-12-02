@@ -124,8 +124,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Adresse</h3>
-                    <p className="text-gray-600">Musterstraße 123</p>
-                    <p className="text-gray-600">12345 Musterstadt</p>
+                    <p className="text-gray-600">XXX Straße XX</p>
+                    <p className="text-gray-600">XXXXX XXX</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -144,7 +144,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">E-Mail</h3>
-                    <p className="text-gray-600">info@elektro-rugova.de</p>
+                    <p className="text-gray-600">info@xxx.de</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
