@@ -49,6 +49,12 @@ export default function Navbar() {
               Über uns
             </Link>
             <Link
+              href="/leistungen"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              Leistungen
+            </Link>
+            <Link
               href="/contact"
               className="bg-gradient-to-r from-blue-600 to-orange-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all font-medium"
             >
@@ -93,6 +99,13 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Über uns
+              </Link>
+              <Link
+                href="/leistungen"
+                className="block text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Leistungen
               </Link>
               <Link
                 href="/contact"

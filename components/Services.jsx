@@ -94,7 +94,7 @@ export default function Services() {
                   {service.description}
                 </p>
                 <Link
-                  href="/contact"
+                  href="/leistungen"
                   className="text-blue-600 font-semibold hover:text-orange-500 transition-colors inline-flex items-center gap-2"
                 >
                   Mehr erfahren
