@@ -33,17 +33,40 @@ export default function GoogleMap() {
       initMap();
     }
 
-    function initMap() {
+    async function initMap() {
       if (!mapRef.current || !window.L || mapInstanceRef.current) return;
 
-      // Koordinaten für Zinkenstraße 19, 72336 Balingen
-      // Ungefähre Koordinaten für Balingen (kann später präzisiert werden)
-      const location = [48.2736, 8.8536];
+      // Adresse für Geocoding
+      const address = "Zinkenstraße 19, 72336 Balingen, Deutschland";
+      
+      // Fallback-Koordinaten (ungefähr Balingen Zentrum)
+      let location = [48.2745, 8.8542];
+
+      // Geocoding mit OpenStreetMap Nominatim API (kostenlos)
+      try {
+        const response = await fetch(
+          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`,
+          {
+            headers: {
+              'User-Agent': 'Elektro-Rugova-Website' // Nominatim erfordert User-Agent
+            }
+          }
+        );
+        
+        if (response.ok) {
+          const data = await response.json();
+          if (data && data.length > 0) {
+            location = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
+          }
+        }
+      } catch (error) {
+        console.log("Geocoding Fehler, verwende Fallback-Koordinaten:", error);
+      }
 
       // Karte initialisieren
       mapInstanceRef.current = window.L.map(mapRef.current, {
         center: location,
-        zoom: 15,
+        zoom: 17, // Höherer Zoom für genauere Position
         scrollWheelZoom: true,
         zoomControl: true,
       });
@@ -109,10 +132,10 @@ export default function GoogleMap() {
             Route anzeigen
           </a>
         </div>
-      `);
+      `).openPopup(); // Popup automatisch öffnen
 
       // Karte anpassen, damit Marker sichtbar ist
-      mapInstanceRef.current.setView(location, 15);
+      mapInstanceRef.current.setView(location, 17);
     }
 
     return () => {
