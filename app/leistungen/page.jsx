@@ -173,7 +173,7 @@ export default function Leistungen() {
             Haben Sie Fragen zu unseren Leistungen?
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Wir beraten Sie gerne kostenlos und unverbindlich zu allen elektrotechnischen Themen.
+            Wir beraten Sie gerne zu allen elektrotechnischen Themen.
           </p>
           <Link
             href="/contact"

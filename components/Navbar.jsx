@@ -27,8 +27,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 electric-gradient rounded-lg flex items-center justify-center">
+          <Link href="/" className="flex items-center gap-2" aria-label="Zur Startseite">
+            <div className="w-10 h-10 electric-gradient rounded-lg flex items-center justify-center" aria-hidden="true">
               <span className="text-white font-bold text-xl">⚡</span>
             </div>
             <span className="font-bold text-2xl gradient-text">Elektro Rugova</span>

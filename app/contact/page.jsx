@@ -96,7 +96,7 @@ export default function Contact() {
             className="bg-white rounded-3xl p-8 shadow-2xl"
           >
             <h2 className="text-3xl font-bold text-gray-800 mb-6">Nachricht senden</h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6" aria-label="Kontaktformular">
               <div>
                 <label className="block text-gray-700 font-medium mb-2">Name *</label>
                 <input
