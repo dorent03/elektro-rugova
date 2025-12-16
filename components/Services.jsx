@@ -59,7 +59,7 @@ export default function Services() {
             <span className="text-gray-800">Leistungen</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Umfassende elektrotechnische Dienstleistungen in XXX und Umgebung
+            Umfassende elektrotechnische Dienstleistungen in Balingen und Umgebung
           </p>
         </motion.div>
 

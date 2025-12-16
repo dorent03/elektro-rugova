@@ -84,7 +84,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-indigo-600 focus:outline-none transition-colors"
-                  placeholder="+49 (0) XXX XXX-XXXX"
+                  placeholder="0172 9411024"
                 />
               </div>
               <div>
@@ -124,8 +124,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Adresse</h3>
-                    <p className="text-gray-600">XXX Straße XX</p>
-                    <p className="text-gray-600">XXXXX XXX</p>
+                    <p className="text-gray-600">Zinkenstraße 19</p>
+                    <p className="text-gray-600">72336 Balingen</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -134,7 +134,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Telefon</h3>
-                    <p className="text-gray-600">+49 (0) XXX XXX-XXXX</p>
+                    <p className="text-gray-600">0172 9411024</p>
                     <p className="text-sm text-gray-500">Mo-Fr: 8:00 - 18:00 Uhr</p>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">E-Mail</h3>
-                    <p className="text-gray-600">info@xxx.de</p>
+                    <p className="text-gray-600">elektro-rugova@t-online.de</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -154,7 +154,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Notdienst</h3>
                     <p className="text-gray-600">24/7 verfügbar</p>
-                    <p className="text-sm text-gray-500">+49 (0) XXX XXX-XXXX</p>
+                    <p className="text-sm text-gray-500">0172 9411024</p>
                   </div>
                 </div>
               </div>

@@ -32,9 +32,9 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="text-6xl md:text-8xl font-extrabold mb-6 leading-tight"
           >
-            <span className="gradient-text">XXX</span>
+            <span className="gradient-text">Elektro</span>
             <br />
-            <span className="text-gray-800">Firmenname</span>
+            <span className="text-gray-800">Rugova</span>
           </motion.h1>
 
           <motion.p
@@ -43,7 +43,7 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed"
           >
-            Professionelle Elektroinstallationen in XXX und Umgebung.
+            Professionelle Elektroinstallationen in Balingen und Umgebung.
             <br />
             <span className="text-indigo-600 font-semibold">Modern. Zuverlässig. Sicher.</span>
           </motion.p>

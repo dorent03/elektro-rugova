@@ -61,7 +61,7 @@ export default function Features() {
               className="text-5xl md:text-6xl font-extrabold mb-6"
             >
               <span className="text-gray-800">Warum</span>{" "}
-              <span className="gradient-text">XXX?</span>
+              <span className="gradient-text">Elektro Rugova?</span>
             </motion.h2>
 
             <div className="space-y-6">

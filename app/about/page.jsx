@@ -17,7 +17,7 @@ export default function About() {
             <span className="text-gray-800">uns</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Ihr zuverlässiger Elektroinstallationsbetrieb in XXX. Professionelle Lösungen für alle elektrotechnischen Herausforderungen.
+            Ihr zuverlässiger Elektroinstallationsbetrieb in Balingen. Professionelle Lösungen für alle elektrotechnischen Herausforderungen.
           </p>
         </motion.div>
 
@@ -53,22 +53,22 @@ export default function About() {
             className="space-y-6"
           >
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              Über XXX
+              Über Elektro Rugova
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              XXX ist ein etablierter Elektroinstallationsbetrieb in XXX, geleitet von Herrn XXX. 
+              Elektro Rugova ist ein etablierter Elektroinstallationsbetrieb in Balingen, geleitet von Herrn Enton Rugova. 
               Wir bieten elektrotechnische Dienstleistungen auf höchstem Niveau und kombinieren traditionelles Handwerk mit modernster Technologie.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Unser Unternehmen in der XXX Straße XX in XXX steht für Qualität, Zuverlässigkeit und Kundenzufriedenheit. 
-              Wir sind stolz auf unsere vielen zufriedenen Kunden in XXX und der gesamten Region.
+              Unser Unternehmen in der Zinkenstraße 19 in Balingen steht für Qualität, Zuverlässigkeit und Kundenzufriedenheit. 
+              Wir sind stolz auf unsere vielen zufriedenen Kunden in Balingen und der gesamten Region.
             </p>
             <div className="mt-6 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl">
               <p className="text-gray-700 font-semibold">
-                <span className="text-indigo-600">Inhaber:</span> XXX
+                <span className="text-indigo-600">Inhaber:</span> Enton Rugova
               </p>
               <p className="text-gray-700 mt-2">
-                <span className="text-indigo-600">Standort:</span> XXX Straße XX, XXXXX XXX
+                <span className="text-indigo-600">Standort:</span> Zinkenstraße 19, 72336 Balingen
               </p>
             </div>
           </motion.div>

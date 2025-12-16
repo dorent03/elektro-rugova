@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata = {
-  title: "XXX - Professionelle Elektroinstallationen",
-  description: "Elektroinstallationsbetrieb in XXX. Professionelle Elektroinstallationen, Smart Home Lösungen und elektrotechnische Dienstleistungen.",
+  title: "Elektro Rugova Balingen - Professionelle Elektroinstallationen",
+  description: "Elektroinstallationsbetrieb in Balingen. Professionelle Elektroinstallationen, Smart Home Lösungen und elektrotechnische Dienstleistungen von Enton Rugova. Zinkenstraße 19, 72336 Balingen.",
 };
 
 export default function RootLayout({ children }) {
