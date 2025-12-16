@@ -36,12 +36,12 @@ export default function sitemap() {
         changeFrequency: 'yearly',
         priority: 0.3,
       },
-      {
-        url: '/datenschutz',
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 0.3,
-      },
+          {
+            url: '/datenschutz',
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.3,
+          },
     ];
   }
   

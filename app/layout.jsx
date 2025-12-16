@@ -5,6 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import QuickContact from "@/components/QuickContact";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SkipToContent from "@/components/SkipToContent";
+import CookieBanner from "@/components/CookieBanner";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import "./globals.css";
 
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
           <Footer />
           <ScrollToTop />
           <QuickContact />
+          <CookieBanner />
         </ErrorBoundary>
       </body>
     </html>

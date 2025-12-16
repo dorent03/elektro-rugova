@@ -51,7 +51,48 @@ export default function Datenschutz() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">3. Datenerfassung auf dieser Website</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">3. Cookies</h2>
+              
+              <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">Was sind Cookies?</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Sie dienen dazu, 
+                die Nutzung unserer Website zu ermöglichen und zu verbessern. Wir verwenden nur technisch 
+                notwendige Cookies, die für den Betrieb der Website erforderlich sind.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">Verwendung von Cookies</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Wir verwenden folgende Cookies:
+                <br />
+                • <strong>Cookie-Consent:</strong> Speichert Ihre Cookie-Einstellungen (lokal im Browser)
+                <br />
+                • <strong>Session-Cookies:</strong> Für die Funktionalität der Website (automatisch gelöscht beim Schließen des Browsers)
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Diese Cookies sind technisch notwendig und werden ohne Ihre ausdrückliche Zustimmung gesetzt. 
+                Sie können Ihre Cookie-Einstellungen jederzeit in Ihrem Browser ändern oder Cookies löschen.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">Cookie-Zustimmung</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Wenn Sie auf unserer Website die Cookie-Einstellungen akzeptieren oder ablehnen, wird diese 
+                Entscheidung lokal in Ihrem Browser gespeichert. Bei Zustimmung oder Ablehnung senden wir 
+                eine automatisierte E-Mail-Benachrichtigung an uns, die folgende Informationen enthält:
+                <br />
+                • Ihre Entscheidung (Akzeptiert/Ablehnt)
+                <br />
+                • Zeitstempel der Entscheidung
+                <br />
+                • IP-Adresse (wenn verfügbar)
+              </p>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Diese Daten werden ausschließlich zur Dokumentation Ihrer Einwilligung verwendet und nicht 
+                an Dritte weitergegeben.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">4. Datenerfassung auf dieser Website</h2>
               
               <h3 className="text-xl font-semibold text-gray-800 mt-4 mb-2">Kontaktformular</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
@@ -77,14 +118,14 @@ export default function Datenschutz() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">4. Ihre Rechte</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">5. Ihre Rechte</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Sie haben jederzeit das Recht, Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung zu erhalten. Außerdem haben Sie ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">5. SSL- bzw. TLS-Verschlüsselung</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">6. SSL- bzw. TLS-Verschlüsselung</h2>
               <p className="text-gray-700 leading-relaxed">
                 Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
               </p>
