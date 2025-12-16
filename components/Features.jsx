@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Zertifizierte Meisterbetrieb",
+      title: "Zertifizierter Meisterbetrieb",
     description: "Ausgezeichnete Qualität durch langjährige Erfahrung",
     icon: "🏆",
   },

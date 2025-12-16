@@ -1,6 +1,22 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import dynamic from "next/dynamic";
+
+// Dynamisch laden für Karte (nur Client-Side)
+const GoogleMap = dynamic(() => import("@/components/GoogleMap"), {
+  ssr: false,
+  loading: () => (
+    <div className="relative h-64 rounded-3xl overflow-hidden shadow-lg bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center">
+      <div className="text-center">
+        <div className="text-6xl mb-4">🗺️</div>
+        <div className="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full text-gray-700 font-medium">
+          Lade Karte...
+        </div>
+      </div>
+    </div>
+  ),
+});
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -9,11 +25,40 @@ export default function Contact() {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Form submission logic here
-    alert("Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.");
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({ type: "success", message: data.message });
+        // Formular zurücksetzen
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        setSubmitStatus({ type: "error", message: data.error || "Fehler beim Senden" });
+      }
+    } catch (error) {
+      setSubmitStatus({ 
+        type: "error", 
+        message: "Netzwerkfehler. Bitte versuchen Sie es später erneut." 
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -99,11 +144,23 @@ export default function Contact() {
                   placeholder="Ihre Nachricht..."
                 />
               </div>
+              {submitStatus && (
+                <div
+                  className={`p-4 rounded-xl ${
+                    submitStatus.type === "success"
+                      ? "bg-green-50 text-green-800 border border-green-200"
+                      : "bg-red-50 text-red-800 border border-red-200"
+                  }`}
+                >
+                  {submitStatus.message}
+                </div>
+              )}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
-                Nachricht senden
+                {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
               </button>
             </form>
           </motion.div>
@@ -160,16 +217,9 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Map Placeholder */}
+            {/* Google Maps */}
             <div className="relative h-64 rounded-3xl overflow-hidden shadow-lg">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🗺️</div>
-                  <div className="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full text-gray-700 font-medium">
-                    Kartenplatzhalter
-                  </div>
-                </div>
-              </div>
+              <GoogleMap />
             </div>
           </motion.div>
         </div>
