@@ -105,34 +105,51 @@ export default function GoogleMap() {
         mapInstanceRef.current
       );
 
-      // Popup hinzufügen
-      marker.bindPopup(`
-        <div style="padding: 8px; font-family: system-ui, -apple-system, sans-serif;">
-          <h3 style="margin: 0 0 5px 0; font-weight: bold; color: #667eea; font-size: 16px;">
+      // Popup hinzufügen mit größerer Breite und Google Maps Link
+      const popupContent = `
+        <div style="
+          padding: 12px; 
+          font-family: system-ui, -apple-system, sans-serif;
+          min-width: 200px;
+          max-width: 250px;
+        ">
+          <h3 style="margin: 0 0 8px 0; font-weight: bold; color: #667eea; font-size: 16px;">
             Elektro Rugova
           </h3>
-          <p style="margin: 0; color: #666; font-size: 14px;">
+          <p style="margin: 0 0 10px 0; color: #666; font-size: 14px; line-height: 1.4;">
             Zinkenstraße 19<br>72336 Balingen
           </p>
           <a 
-            href="https://www.openstreetmap.org/directions?to=${location[0]},${location[1]}" 
+            href="https://www.google.com/maps/dir/?api=1&destination=${location[0]},${location[1]}" 
             target="_blank" 
             rel="noopener noreferrer"
             style="
-              display: inline-block;
+              display: block;
+              text-align: center;
               margin-top: 8px;
-              padding: 4px 12px;
-              background: #667eea;
+              padding: 8px 16px;
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
               color: white;
               text-decoration: none;
-              border-radius: 6px;
-              font-size: 12px;
+              border-radius: 8px;
+              font-size: 13px;
+              font-weight: 600;
+              white-space: nowrap;
+              box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+              transition: transform 0.2s;
             "
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
           >
             Route anzeigen
           </a>
         </div>
-      `).openPopup(); // Popup automatisch öffnen
+      `;
+
+      marker.bindPopup(popupContent, {
+        maxWidth: 280,
+        className: 'custom-popup'
+      }).openPopup(); // Popup automatisch öffnen
 
       // Karte anpassen, damit Marker sichtbar ist
       mapInstanceRef.current.setView(location, 17);
