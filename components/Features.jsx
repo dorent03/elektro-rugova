@@ -48,7 +48,7 @@ export default function Features() {
                 </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-200 rounded-full blur-3xl opacity-50 -z-10"></div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-orange-200 rounded-full blur-3xl opacity-50 -z-10"></div>
           </motion.div>
 
           {/* Right Side - Features */}

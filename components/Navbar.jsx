@@ -38,19 +38,19 @@ export default function Navbar() {
           <div className="hidden md:flex gap-8 items-center">
             <Link
               href="/"
-              className="text-gray-700 hover:text-indigo-600 transition-colors font-medium"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="text-gray-700 hover:text-indigo-600 transition-colors font-medium"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
               Über uns
             </Link>
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all font-medium"
+              className="bg-gradient-to-r from-blue-600 to-orange-500 text-white px-6 py-2 rounded-full hover:shadow-lg transition-all font-medium"
             >
               Kontakt
             </Link>
@@ -82,21 +82,21 @@ export default function Navbar() {
             >
               <Link
                 href="/"
-                className="block text-gray-700 hover:text-indigo-600 transition-colors font-medium"
+                className="block text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="block text-gray-700 hover:text-indigo-600 transition-colors font-medium"
+                className="block text-gray-700 hover:text-blue-600 transition-colors font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Über uns
               </Link>
               <Link
                 href="/contact"
-                className="block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-2 rounded-full text-center font-medium"
+                className="block bg-gradient-to-r from-blue-600 to-orange-500 text-white px-6 py-2 rounded-full text-center font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Kontakt

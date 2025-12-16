@@ -63,12 +63,12 @@ export default function About() {
               Unser Unternehmen in der Zinkenstraße 19 in Balingen steht für Qualität, Zuverlässigkeit und Kundenzufriedenheit. 
               Wir sind stolz auf unsere vielen zufriedenen Kunden in Balingen und der gesamten Region.
             </p>
-            <div className="mt-6 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl">
+            <div className="mt-6 p-6 bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl">
               <p className="text-gray-700 font-semibold">
-                <span className="text-indigo-600">Inhaber:</span> Enton Rugova
+                <span className="text-blue-600">Inhaber:</span> Enton Rugova
               </p>
               <p className="text-gray-700 mt-2">
-                <span className="text-indigo-600">Standort:</span> Zinkenstraße 19, 72336 Balingen
+                <span className="text-blue-600">Standort:</span> Zinkenstraße 19, 72336 Balingen
               </p>
             </div>
           </motion.div>

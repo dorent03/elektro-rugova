@@ -27,7 +27,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-24 px-6 bg-gradient-to-br from-indigo-50 to-purple-50">
+    <section className="py-24 px-6 bg-gradient-to-br from-blue-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -57,7 +57,7 @@ export default function Testimonials() {
             >
               {/* Avatar Placeholder */}
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 flex items-center justify-center text-white text-2xl font-bold">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-orange-500 flex items-center justify-center text-white text-2xl font-bold">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>

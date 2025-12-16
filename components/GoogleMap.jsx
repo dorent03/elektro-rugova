@@ -83,7 +83,7 @@ export default function GoogleMap() {
         className: "custom-marker",
         html: `
           <div style="
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e40af 0%, #0ea5e9 50%, #f97316 100%);
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -113,7 +113,7 @@ export default function GoogleMap() {
           min-width: 200px;
           max-width: 250px;
         ">
-          <h3 style="margin: 0 0 8px 0; font-weight: bold; color: #667eea; font-size: 16px;">
+          <h3 style="margin: 0 0 8px 0; font-weight: bold; color: #1e40af; font-size: 16px;">
             Elektro Rugova
           </h3>
           <p style="margin: 0 0 10px 0; color: #666; font-size: 14px; line-height: 1.4;">
@@ -128,7 +128,7 @@ export default function GoogleMap() {
               text-align: center;
               margin-top: 8px;
               padding: 8px 16px;
-              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              background: linear-gradient(135deg, #1e40af 0%, #0ea5e9 50%, #f97316 100%);
               color: white;
               text-decoration: none;
               border-radius: 8px;

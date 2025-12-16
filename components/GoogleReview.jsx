@@ -93,10 +93,10 @@ export default function GoogleReviews() {
 
   if (loading) {
     return (
-      <section className="py-24 px-6 bg-gradient-to-br from-indigo-50 to-purple-50">
+      <section className="py-24 px-6 bg-gradient-to-br from-blue-50 to-orange-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
             <p className="mt-4 text-gray-600">Lade Bewertungen...</p>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function GoogleReviews() {
             >
               {/* Google Logo & Author */}
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 flex items-center justify-center text-white text-2xl font-bold">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-orange-500 flex items-center justify-center text-white text-2xl font-bold">
                   {review.author_name?.charAt(0) || "?"}
                 </div>
                 <div className="flex-1">
@@ -207,7 +207,7 @@ export default function GoogleReviews() {
               href={`https://search.google.com/local/writereview?placeid=${GOOGLE_PLACE_ID}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               Bewertung auf Google hinterlassen
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

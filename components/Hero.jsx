@@ -45,7 +45,7 @@ export default function Hero() {
           >
             Professionelle Elektroinstallationen in Balingen und Umgebung.
             <br />
-            <span className="text-indigo-600 font-semibold">Modern. Zuverlässig. Sicher.</span>
+            <span className="text-blue-600 font-semibold">Modern. Zuverlässig. Sicher.</span>
           </motion.p>
 
           <motion.div
@@ -56,7 +56,7 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               Kostenlose Beratung
             </Link>
@@ -73,12 +73,12 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, -20, 0] }}
           transition={{ duration: 3, repeat: Infinity }}
-          className="absolute top-20 left-10 w-32 h-32 bg-indigo-200 rounded-full blur-3xl opacity-30"
+          className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full blur-3xl opacity-30"
         />
         <motion.div
           animate={{ y: [0, 20, 0] }}
           transition={{ duration: 4, repeat: Infinity }}
-          className="absolute bottom-20 right-10 w-40 h-40 bg-purple-200 rounded-full blur-3xl opacity-30"
+          className="absolute bottom-20 right-10 w-40 h-40 bg-orange-200 rounded-full blur-3xl opacity-30"
         />
       </div>
     </section>

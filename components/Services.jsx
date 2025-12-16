@@ -74,7 +74,7 @@ export default function Services() {
               className="group relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               {/* Image Placeholder */}
-              <div className="relative h-48 bg-gradient-to-br from-indigo-100 to-purple-100 overflow-hidden">
+              <div className="relative h-48 bg-gradient-to-br from-blue-100 to-orange-100 overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-6xl opacity-30">{service.icon}</div>
                 </div>
@@ -87,7 +87,7 @@ export default function Services() {
 
               <div className="p-6">
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-indigo-600 transition-colors">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
@@ -95,7 +95,7 @@ export default function Services() {
                 </p>
                 <Link
                   href="/contact"
-                  className="text-indigo-600 font-semibold hover:text-purple-600 transition-colors inline-flex items-center gap-2"
+                  className="text-blue-600 font-semibold hover:text-orange-500 transition-colors inline-flex items-center gap-2"
                 >
                   Mehr erfahren
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
