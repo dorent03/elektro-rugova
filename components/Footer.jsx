@@ -61,8 +61,16 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Kontakt</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>📞 0172 9411024</li>
-              <li>✉️ elektro-rugova@t-online.de</li>
+              <li>
+                <a href="tel:01729411024" className="hover:text-white transition-colors">
+                  📞 0172 9411024
+                </a>
+              </li>
+              <li>
+                <a href="mailto:elektro-rugova@t-online.de" className="hover:text-white transition-colors">
+                  ✉️ elektro-rugova@t-online.de
+                </a>
+              </li>
               <li>📍 Zinkenstraße 19</li>
               <li>📍 72336 Balingen</li>
             </ul>

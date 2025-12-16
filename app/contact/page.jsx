@@ -69,7 +69,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="pt-32 pb-24 px-6">
+    <section className="pb-24 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -191,7 +191,11 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">Telefon</h3>
-                    <p className="text-gray-600">0172 9411024</p>
+                    <p className="text-gray-600">
+                      <a href="tel:01729411024" className="hover:text-blue-600 transition-colors">
+                        0172 9411024
+                      </a>
+                    </p>
                     <p className="text-sm text-gray-500">Mo-Fr: 8:00 - 18:00 Uhr</p>
                   </div>
                 </div>
@@ -201,7 +205,11 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800 mb-1">E-Mail</h3>
-                    <p className="text-gray-600">elektro-rugova@t-online.de</p>
+                    <p className="text-gray-600">
+                      <a href="mailto:elektro-rugova@t-online.de" className="hover:text-blue-600 transition-colors">
+                        elektro-rugova@t-online.de
+                      </a>
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

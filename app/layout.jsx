@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
+import ScrollToTop from "@/components/ScrollToTop";
+import QuickContact from "@/components/QuickContact";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import "./globals.css";
 
@@ -35,8 +38,11 @@ export default function RootLayout({ children }) {
       <body className="bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50 text-gray-900 min-h-screen flex flex-col antialiased">
         <ErrorBoundary>
           <Navbar />
+          <Breadcrumbs />
           <main className="flex-1">{children}</main>
           <Footer />
+          <ScrollToTop />
+          <QuickContact />
         </ErrorBoundary>
       </body>
     </html>

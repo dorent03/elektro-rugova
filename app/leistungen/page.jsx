@@ -91,7 +91,7 @@ const leistungen = [
 
 export default function Leistungen() {
   return (
-    <section className="pt-32 pb-24 px-6">
+    <section className="pb-24 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
