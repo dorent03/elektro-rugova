@@ -1,5 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://www.elektro-rugova.de/sitemap.xml
-

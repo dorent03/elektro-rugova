@@ -1,12 +1,15 @@
 export default function StructuredData() {
+  // Base URL - anpassen wenn Domain verfügbar
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || '';
+  
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://www.elektro-rugova.de/#organization",
+    "@id": baseUrl ? `${baseUrl}/#organization` : "#organization",
     name: "Elektro Rugova",
     legalName: "Elektro Rugova",
-    image: "https://www.elektro-rugova.de/logo.png",
-    url: "https://www.elektro-rugova.de",
+    image: baseUrl ? `${baseUrl}/logo.png` : "/logo.png",
+    url: baseUrl || "/",
     telephone: "+491729411024",
     email: "elektro-rugova@t-online.de",
     address: {

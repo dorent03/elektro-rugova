@@ -1,6 +1,4 @@
-import { MetadataRoute } from 'next';
-
-export default function manifest(): MetadataRoute.Manifest {
+export default function manifest() {
   return {
     name: 'Elektro Rugova - Elektroinstallationen Balingen',
     short_name: 'Elektro Rugova',
