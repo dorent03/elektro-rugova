@@ -28,8 +28,29 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
+  const validateEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Client-side Validierung
+    if (!formData.name.trim()) {
+      setSubmitStatus({ type: "error", message: "Bitte geben Sie Ihren Namen ein." });
+      return;
+    }
+    
+    if (!validateEmail(formData.email)) {
+      setSubmitStatus({ type: "error", message: "Bitte geben Sie eine gültige E-Mail-Adresse ein." });
+      return;
+    }
+    
+    if (!formData.message.trim()) {
+      setSubmitStatus({ type: "error", message: "Bitte geben Sie eine Nachricht ein." });
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitStatus(null);
 
@@ -45,16 +66,16 @@ export default function Contact() {
       const data = await response.json();
 
       if (response.ok) {
-        setSubmitStatus({ type: "success", message: data.message });
+        setSubmitStatus({ type: "success", message: data.message || "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden." });
         // Formular zurücksetzen
         setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
-        setSubmitStatus({ type: "error", message: data.error || "Fehler beim Senden" });
+        setSubmitStatus({ type: "error", message: data.error || "Fehler beim Senden. Bitte versuchen Sie es später erneut." });
       }
     } catch (error) {
       setSubmitStatus({ 
         type: "error", 
-        message: "Netzwerkfehler. Bitte versuchen Sie es später erneut." 
+        message: "Netzwerkfehler. Bitte versuchen Sie es später erneut oder rufen Sie uns direkt an." 
       });
     } finally {
       setIsSubmitting(false);
@@ -117,8 +138,9 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors"
                   placeholder="ihre@email.de"
+                  aria-required="true"
                 />
               </div>
               <div>
@@ -139,9 +161,11 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
+                  minLength={10}
                   rows="6"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-indigo-600 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors resize-none"
                   placeholder="Ihre Nachricht..."
+                  aria-required="true"
                 />
               </div>
               {submitStatus && (

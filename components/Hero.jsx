@@ -56,15 +56,15 @@ export default function Hero() {
           >
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300"
             >
-              Kostenlose Beratung
+              Kontakt aufnehmen
             </Link>
             <Link
-              href="/about"
-              className="glass text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-all duration-300"
+              href="/leistungen"
+              className="glass text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300"
             >
-              Mehr erfahren
+              Unsere Leistungen
             </Link>
           </motion.div>
         </motion.div>

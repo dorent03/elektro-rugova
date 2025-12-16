@@ -179,7 +179,7 @@ export default function Leistungen() {
             href="/contact"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300"
           >
-            Kostenlose Beratung anfragen
+            Jetzt Kontakt aufnehmen
             <span>→</span>
           </Link>
         </motion.div>
